@@ -12,6 +12,10 @@ struct CircleImage: View {
         
         
         Image("turtlerock")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 270)
+            
             .clipShape(Circle())
             .overlay{
                 Circle().stroke(.white, lineWidth: 5)
